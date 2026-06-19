@@ -13,7 +13,7 @@ Paste a long URL, get back a short one. Visit the short link, get redirected to 
 - Visit `flcut-eta.vercel.app/<code>` → looks up the code → redirects to the original URL
 - Deployed and live on Vercel
 
-## What's NOT built yet (being upfront about this)
+## What's NOT built yet 
 
 - No dashboard listing created links yet — this was a required basic feature and I didn't get to it. It's the next thing I'd build.
 - No custom aliases. Codes are random only, no way to pick your own slug.
@@ -38,7 +38,7 @@ I kept this as small as possible on purpose. I didn't build accounts, analytics 
 
 If I add analytics later, that'd be a separate `Click` table referencing `Link` by id, rather than cramming click data onto the `Link` row itself, since click volume grows much faster than link count and I'd rather keep that data separate.
 
-## If I'd had 4 hours, what I'd build first vs. cut
+## what happened?
 
 This is basically what happened in practice. First 4 hours went into: get Next.js + Prisma + Neon talking to each other, get one URL stored, get one redirect working, get it deployed. That ate more time than I expected — most of it was fighting tooling (see tradeoffs below), not writing actual feature code.
 
